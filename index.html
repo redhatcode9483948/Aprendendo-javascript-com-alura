@@ -9,18 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
+    <title>Adivinha o número oculto</title>
 </head>
 
 <body>
+
+    
+
     <div class="container">
         <div class="container__conteudo">
-            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+            <img src="https://img.freepik.com/fotos-premium/uma-imagem-colorida-de-um-robo-com-olhos-roxos-e-azuis-e-fundo-roxo_579873-28407.jpg" alt="robô mergulhador" class="container__imagem-robo"/>
             <div class="container__informacoes">
                 <img src="./img/trophy.png" alt="ícone de um troféu" />
                  <div class="container__texto">
+                    <label for="chute"> Digite um número de 1 a 100:</label>
+                       <input type="number" id="chute" name="chute" min="1" max="100">
+                         <button onclick="verificarChute()">Chute</button>
+                         <button onclick="tentarNovamente()">Tentar Novamente</button>
                     <h1>Você <span class="container__texto-azul">acertou!</span></h1>
-                    <h2>Você descobriu o número secreto!</h2>
+                    <p class="container__texto-azul" id="resultado"></p>
+                   
                 </div>
             </div>
         </div>
