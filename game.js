@@ -1,13 +1,14 @@
-//mensagem na tela  
-alert('Boas-vindas ao jogo do número secreto!');
-//variável que guarda o número
-let numeroSecreto = 5;
-let chute = prompt ('Escolha um número de 0 até 10:');
+let titulo = document.querySelector('h1');
+titulo.innerHTML = 'O jogo do número secreto';
 
-//condição para as variaveis
-if (chute == numeroSecreto) {
-alert(`Parabéns! Você acertou encheio, o número secreto é ${numeroSecreto}`);
-console.log(numeroSecreto);
-}else{
-    alert('Você errou :(');
+let paragrafo = document.querySelector('p');
+paragrafo.innerHTML = 'Você acertou o número secreto!';
+
+function verificarChute() {
+
+
+}
+function mostrarNumero() { 
+    const valor = document.getElementById("numero").value; 
+    document.getElementById("resultado").textContent = "Você digitou: " + valor; 
 }
